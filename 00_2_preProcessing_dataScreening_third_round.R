@@ -16,13 +16,13 @@ library(rgdal)
 library(psych)
 
 # input data
-dirPath = 'D:/0.NCKH/0.MyPaper/2022_climQ'
-qPath = 'D:/0.NCKH/0.MyPaper/2022_climQ/0_input/rawGsim/TIMESERIES_SUB2'
-pPath = 'D:/0.NCKH/0.MyPaper/2022_climQ/0_input/gldas/csv/precip'
-tPath = 'D:/0.NCKH/0.MyPaper/2022_climQ/0_input/gldas/csv/airt'
+dirPath = 'XXX/2022_climQ'
+qPath = 'XXX/rawGsim/TIMESERIES_SUB2'
+pPath = 'XXX/2022_climQ/0_input/gldas/csv/precip'
+tPath = 'XXX/2022_climQ/0_input/gldas/csv/airt'
 #etPath = 'D:/0.NCKH/0.MyPaper/2021_GlobalQ_AI/noah/csv/et'
 #smPath = 'D:/0.NCKH/0.MyPaper/2021_GlobalQ_AI/noah/csv/sm'
-gsimOrig = read.csv('D:/0.NCKH/0.MyPaper/2022_climQ/0_input/gsimInfoSubNewRule_4894stations.csv')
+gsimOrig = read.csv('XXX/2022_climQ/0_input/gsimInfoSubNewRule_4894stations.csv')
 # load gsim data
 load(file.path(dirPath,'processing','qsim_metaData_qts_1st2ndScreening.rdata'))
 metaData = gsimInfoSub22
@@ -93,7 +93,7 @@ summary(annualDf)
 # ir.mean :average of catchment irrigation area
 # landcover.type :catchment land-cover (UN Classification System for 2015) if one single land-cover type present over more than 50% catchment area, otherwise 
 #                 'No dominant class' value was assigned
-# lithology.type  :catchment lithology (16 classes by Dürr et al. [2005] (*)) if one single lithology type present over more than 50% catchment area, otherwise 'No 
+# lithology.type  :catchment lithology (16 classes by DÃ¼rr et al. [2005] (*)) if one single lithology type present over more than 50% catchment area, otherwise 'No 
 #                                dominant class' value was assigned
 # slp.mean :average of slope within catchment boundary
 # pd.mean : average values of population density within catchment boundary (GPWv4 - 2010)
@@ -238,7 +238,7 @@ for(ic in 1 :length(copyid)){
         file.copy(checkfile ,targetPatch, overwrite = T)
 }
 
-rawPath = 'E:/GlobalRunoff/GSIM/GSIM_metadata/GSIM_catchments'
+rawPath = 'XXX/GSIM/GSIM_metadata/GSIM_catchments'
 targetPatch = file.path(dirPath,'0_input','rawGsim','thirdScreen','catchments')
 for(ic in 1 :nrow(metaDataFinal)){
         sname = tolower(metaDataFinal$gsim.no[ic])
