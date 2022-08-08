@@ -2,14 +2,14 @@ library(e1071)
 library(tidyverse)
 library(hydroGOF)
 # input data
-dirPath = 'D:/0.NCKH/0.MyPaper/2022_climQ'
+dirPath = 'XXX/2022_climQ'
 
 dirmonth = c('01_janTS','02_febTS','03_marTS','04_aprTS','05_mayTS','06_junTS',
              '07_julTS','08_augTS','09_sepTS','10_octTS','11_novTS','12_decTS')
 # built-in function
-source('C:/Users/manhh/Dropbox/RStudy/0.Code/built_in/ml_support_functions.r')
-source('C:/Users/manhh/Dropbox/RStudy/0.Code/built_in/qsim_support_functions.r')
-source('C:/Users/manhh/Dropbox/RStudy/0.Code/built_in/plot_support_functions.r')
+source('XXX/ml_support_functions.r')
+source('XXX/qsim_support_functions.r')
+source('XXX/plot_support_functions.r')
 
 # model information
 SNames = paste0('EX',1:7)
