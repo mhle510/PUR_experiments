@@ -1,4 +1,4 @@
-dirPath = 'D:/0.NCKH/0.MyPaper/2022_climQ'
+dirPath = 'XXX/2022_climQ'
 
 
 
