@@ -18,12 +18,12 @@ require(lubridate)
 
 
 # path setup
-projPath = 'E:/GlobalRunoff/GSIM'
+projPath = 'XXX/GSIM'
 dir.create(file.path(projPath,'flowsignalPrediction'),showWarnings = F)
 processPath = file.path(projPath,'flowsignalPrediction')
 
-dir.create(file.path('D:/0.NCKH/0.MyPaper/2022_climQ','processing'), showWarnings = F)
-outPath = file.path('D:/0.NCKH/0.MyPaper/2022_climQ','processing')
+dir.create(file.path('XXX/2022_climQ','processing'), showWarnings = F)
+outPath = file.path('XXX/2022_climQ','processing')
 
 # meta data
 gsimCatch = read.csv(file.path(projPath,'GSIM_metadata/GSIM_catalog/GSIM_catchment_characteristics.csv'))
@@ -36,11 +36,11 @@ gsimInfo = full_join(gsimInfo, gsimHomogeneity, by ='gsim.no')
 naloc = which(is.na(gsimInfo$gsim.no))
 
 # load shapfile
-wm = readOGR('E:/GlobalRunoff/GSIM/spatialDat/world_borders.shp')
+wm = readOGR('XXX/GSIM/spatialDat/world_borders.shp')
 
 # own-built function
 source(file.path(projPath, 'Rcode','gsim_support_functions.r'))
-source('C:/Users/manhh/Dropbox/RStudy/0.Code/built_in/dataframe_support_functions.r')
+source('XXX/dataframe_support_functions.r')
 
 # first screening: inital selection-------------------------------------------------
 # Criteria:
