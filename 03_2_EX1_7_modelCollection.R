@@ -1,5 +1,5 @@
 # input data
-dirPath = '/media/hung/DATA/0.NCKH/0.MyPaper/2022_climQ'
+dirPath = 'XXX/2022_climQ'
 dir.create(file.path(dirPath, 'processing','sumRes'), showWarnings = F)
 processedPath = file.path(dirPath, 'processing','sumRes')
 
