@@ -1,1 +1,1 @@
-The code is for the manuscript "Toward streamflow estimation in ungauged regions using machine learning: Quantifying uncertainties in geographic extrapolation".
+The code is for the manuscript "Streamflow Estimation in Ungauged Regions using Machine Learning: Quantifying Uncertainties in Geographic Extrapolation".
